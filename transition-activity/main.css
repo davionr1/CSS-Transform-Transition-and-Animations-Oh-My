@@ -5,23 +5,65 @@ body  {
   text-align: center;
 }
 
-.caption {
+/* .caption {
   width: 80%;
   margin: auto;
+  position: relative;
   overflow: hidden;
 }
+.caption-content{
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  padding:10px;
+  transform: translateY(100%);
+  transition: transform 350ms ease-out;
+  color:white;
+}
+.caption:hover .caption-content{
+  transform:translateY(0);
+}
+.caption-title{
+  margin:0;
+  padding: 0 0 12px;
+  transform:translateY(calc(-100%-10px));
+  transition: transform 350ms ease-out;
+}
+.caption:hover .caption-title{
+  transform:translateY(0);
+}
+.caption::before{
+  content:'';
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background: transparent;
+  transition: background 350ms ease-out;
 
+}
+.caption:hover::before{
+  background: rgba(0, 0, 0, .5);
+}
+.caption{
+  transform:translateZ(0)
+} */
 img {
-  width: 80%;
+  width: 100%;
+  display:block;
 }
 
 button {
   padding: 1em;
-  margin: .2em;
+  margin: 2em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
 }
 
 button:hover {
   background-color: cornflowerblue;
+  color: white;
 }
